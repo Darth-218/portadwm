@@ -23,7 +23,7 @@ static const char col_red[] = "#e46876";
 static const char col_black[] = "#000000";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
-    [SchemeNorm] = {col_gray4, col_black, col_gray4},
+    [SchemeNorm] = {col_gray1, col_black, col_gray1},
     [SchemeSel] = {col_red, col_black, col_red},
 };
 
@@ -86,7 +86,7 @@ static const char *dmenucmd[] = {
     "-nf",       col_gray3, "-sb",    col_red, "-sf",     col_gray4, NULL};
 
 // Spawn terminal
-static const char *termcmd[] = {"st", NULL};
+static const char *termcmd[] = {"alacritty", NULL};
 
 /* Launch Mercury browser */
 static const char *mercurycmd[] = {"firefox", NULL};
