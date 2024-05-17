@@ -11,8 +11,8 @@ static const int horizpadbar = 0;    /* horizontal padding for statusbar */
 static const int vertpadbar = 2;     /* vertical padding for statusbar */
 static const int vertpad = 0;        /* vertical padding of bar */
 static const int sidepad = 0;        /* horizontal padding of bar */
-static const char *fonts[] = {"Monocraft Nerd Font:size=10"};
-static const char dmenufont[] = "Monocraft Nerd Font:bold:size=10";
+static const char *fonts[] = {"Firacode Nerd Font Mono:SemiBold:size=10"};
+static const char dmenufont[] = "Firacode Nerd Font Mono:SemiBold:size=10";
 static const char col_gray1[] = "#222222";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
@@ -83,8 +83,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {
-    "dmenu_run", "-m",      dmenumon, "-fn",   dmenufont, "-nb",     col_gray1,
-    "-nf",       col_gray3, "-sb",    col_red, "-sf",     col_gray4, NULL};
+    "dmenu_run", "-m",      dmenumon, "-fn",    dmenufont, "-nb",     col_black,
+    "-nf",       col_gray3, "-sb",    col_blue, "-sf",     col_gray4, NULL};
 
 // Spawn terminal
 static const char *termcmd[] = {"alacritty", NULL};
