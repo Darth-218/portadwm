@@ -25,11 +25,11 @@ static const char col_black[] = "#000000";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
     [SchemeNorm] = {col_gray4, col_black, col_gray1},
-    [SchemeSel] = {col_blue, col_black, col_blue},
+    [SchemeSel] = {col_gray4, col_black, col_gray4},
 };
 
 /* tagging */
-static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+static const char *tags[] = {"term", "www", "doc", "dirs", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
     /* xprop(1):
